@@ -1,0 +1,188 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(#ee4d2d, #ff7337);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-navlist {
+    list-style: none;
+    padding-left: 0;
+}
+
+.header__navbar-navitem--cursoroff,
+.header__navbar-navitem {
+    position: relative;
+}
+
+.header__navbar-navitem--download,
+.header__navbar-navitem--cursoroff,
+.header_navbar-navitem-link,
+.header__navbar-navitem {
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 4px;
+
+}
+
+.header__navbar-navitem--download {
+    position: relative;
+}
+
+.header_navbar-navitem-link:hover,
+.header__navbar-navitem:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header__navbar-navitem--fontBold {
+    font-weight: 500;
+}
+
+.header__navbar-navitem--separate::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-left: 1px solid var(--white-color);
+    height: 14px;
+    top: 50%;
+    right: -2px;
+    transform: translateY(-50%);
+
+}
+
+.header__navbar-icons {
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 0 4px;
+    font-size: 18px;
+}
+
+.header__navbar-downloadbar {
+    background-color: var(--white-color);
+    width: 160px;
+    position: absolute;
+    top: 110%;
+    left: -50%;
+    display: none;
+    opacity: 1;
+    border-radius: 2px;
+    animation: fade_in ease-in 0.4s;
+}
+
+
+.header__navbar-downloadbar-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-downloadbar-icon {
+    height: 14px;
+    margin: 15px 9px;
+}
+
+.header__navbar-downloadbar-icon-link {}
+
+
+.orcode {
+    width: 160px;
+}
+
+
+.header__navbar-navitem:hover .header__navbar-downloadbar {
+    display: block;
+}
+
+/* Notification */
+.header__navbar-notify {
+    position: absolute;
+    width: 404px;
+    top: 110%;
+    background-color: var(--white-color);
+    right: 5px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+}
+
+.header__navbar-notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__navbar-notify-header h3 {
+    color: #999;
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 4.0rem;
+    margin-left: 1.2rem;
+}
+
+.header__navbar-notify-list {
+    padding-left: 0;
+}
+
+.header__navbar-notify-item {
+    background-color: rgba(253, 83, 48, 0.1);
+}
+
+.header__navbar-notify-item:hover {
+    background-color: #f7f7f7;
+}
+
+/* white color in the background to show that user have seen the notification (add class to the li) */
+.header__navbar-notify-item--viewed {
+    background-color: var(--white-color);
+}
+
+.header__navbar-notify-link {
+    display: flex;
+    text-decoration: none;
+}
+
+.header__navbar-notify-img {
+    width: 4.8rem;
+    object-fit: contain;
+    margin: 0px 1.2rem;
+}
+
+.notify-info {
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.notify-name {
+    font-size: 1.4rem;
+    color: var(--black-color);
+}
+
+.notify-description {
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.header__notify-footer {
+    text-align: center;
+    height: 4.6rem;
+}
+
+.header__notify-footter__btn {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
+    line-height: 4.6rem;
+    display: block;
+}
+
+.header__notify-footter__btn:hover{
+    background-color: #f7f7f7;
+
+}
